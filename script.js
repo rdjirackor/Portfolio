@@ -47,6 +47,19 @@ $(document).ready(function(){
         backSpeed: 60,
         loop: true
     });
+    // Get a reference to the image element
+var image = document.querySelector('.right-image');
+
+// Define how much you want to move the image down in pixels (you can change this value)
+var moveDownPixels = 250;
+
+// Calculate the new margin-top value
+var currentMargin = parseInt(window.getComputedStyle(image).marginTop);
+var newMargin = currentMargin + moveDownPixels + 'px';
+
+// Apply the new margin-top value to move the image down
+image.style.marginTop = newMargin;
+
 
     // owl carousel script
     $('.carousel').owlCarousel({
