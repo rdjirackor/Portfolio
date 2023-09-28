@@ -52,6 +52,7 @@ var image = document.querySelector('.right-image');
 
 // Define how much you want to move the image down in pixels (you can change this value)
 var moveDownPixels = 250;
+var moveRightPixels = 50;
 
 // Calculate the new margin-top value
 var currentMargin = parseInt(window.getComputedStyle(image).marginTop);
