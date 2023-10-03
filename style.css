@@ -30,6 +30,7 @@ html{
 section{
     padding: 100px 0;
 }
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -88,7 +89,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+    background: blue;
 }
 .navbar .max-width{
     display: flex;
@@ -165,7 +166,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("assets/bler.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -182,13 +183,13 @@ section .title::after{
 }
 .home .home-content .text-1{
     font-size: 27px;
-    color: blue;
+    color: white;
 }
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
-    color: blue;
+    color: white;
 }
 .home .home-content .text-3{
     font-size: 40px;
@@ -370,13 +371,13 @@ section .title::after{
     width: 90%;
 }
 .skills-content .right .css::before{
-    width: 60%;
+    width: 20%;
 }
 .skills-content .right .js::before{
-    width: 80%;
+    width: 50%;
 }
 .skills-content .right .php::before{
-    width: 50%;
+    width: 95%;
 }
 .skills-content .right .mysql::before{
     width: 70%;

@@ -14,7 +14,7 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");
         }
     });
-
+//
     // slide-up script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
@@ -51,15 +51,21 @@ $(document).ready(function(){
 var image = document.querySelector('.right-image');
 
 // Define how much you want to move the image down in pixels (you can change this value)
-var moveDownPixels = 250;
-var moveRightPixels = 50;
+var moveDownPixels = 150;
+var moveRightPixels = 100;
 
 // Calculate the new margin-top value
 var currentMargin = parseInt(window.getComputedStyle(image).marginTop);
 var newMargin = currentMargin + moveDownPixels + 'px';
+var currentMargin1 = parseInt(window.getComputedStyle(image).marginRight);
+var newMargin1 = currentMargin1 + moveRightPixels + 'px';
 
 // Apply the new margin-top value to move the image down
 image.style.marginTop = newMargin;
+
+image.style.marginRight = newMargin1;
+
+
 
 
     // owl carousel script
