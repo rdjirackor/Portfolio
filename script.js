@@ -51,7 +51,7 @@ $(document).ready(function(){
 var image = document.querySelector('.right-image');
 
 // Define how much you want to move the image down in pixels (you can change this value)
-var moveDownPixels = 150;
+var moveDownPixels = 95;
 var moveRightPixels = 100;
 
 // Calculate the new margin-top value
