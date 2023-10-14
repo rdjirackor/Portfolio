@@ -1,7 +1,7 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 /* Add this CSS inside your style.css file */
-@media screen and (max-width: 1000px) { /* Adjust the max-width as needed */
+@media screen and (max-width: 1100px) { /* Adjust the max-width as needed */
     .right-image {
         display: none; /* Hide the image on screens with a width of 768px or less */
     }
