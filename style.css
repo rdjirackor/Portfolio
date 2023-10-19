@@ -42,11 +42,13 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .projects, .skills, .teams, .contact, footer{
+.about, .projects, .skills, .teams, .contact, .articles footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .projects .serv-content,
+.articles .serv-content,
+
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -272,7 +274,15 @@ section .title::after{
     color:#fff;
     background: #111;
 }
+.articles, .teams{
+    color:#fff;
+    background: #065535;
+}
 .projects .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.articles .title::before,
 .teams .title::before{
     background: #fff;
 }
@@ -280,6 +290,11 @@ section .title::after{
 .teams .title::after{
     background: #111;
     content: "what i provide";
+}
+.articles .title::after,
+.teams .title::after{
+    background: #065535;
+    content: "my productions";
 }
 .projects .serv-content .card{
     width: calc(33% - 20px);
@@ -291,13 +306,32 @@ section .title::after{
     
     transition: all 0.3s ease;
 }
+.articles .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    height: 150pt;
+    
+    transition: all 0.3s ease;
+}
 .projects .serv-content .card:hover{
+    background: blue;
+}
+.articles .serv-content .card:hover{
     background: blue;
 }
 .projects .serv-content .card .box{
     transition: all 0.3s ease;
 }
+.articles .serv-content .card .box{
+    transition: all 0.3s ease;
+}
 .projects .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.articles .serv-content .card:hover .box{
     transform: scale(1.05);
 }
 .projects .serv-content .card i{
@@ -305,10 +339,23 @@ section .title::after{
     color: crimson;
     transition: color 0.3s ease;
 }
+.articles .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
 .projects .serv-content .card:hover i{
     color: #fff;
 }
+.articles .serv-content .card:hover i{
+    color: #fff;
+}
 .projects .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.articles .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -634,6 +681,10 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+    .articles .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
@@ -655,6 +706,9 @@ footer span a:hover{
         font-size: 20px;
     }
     .projects .serv-content .card{
+        width: 100%;
+    }
+    .articles .serv-content .card{
         width: 100%;
     }
 }
