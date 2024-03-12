@@ -317,10 +317,10 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .projects .serv-content .card:hover{
-    background: blue;
+    background: orange;
 }
 .articles .serv-content .card:hover{
-    background: blue;
+    background: orange;
 }
 .projects .serv-content .card .box{
     transition: all 0.3s ease;
