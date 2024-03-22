@@ -3,7 +3,9 @@
 /* Add this CSS inside your style.css file */
 @media screen and (max-width: 1100px) { /* Adjust the max-width as needed */
     .right-image {
-        display: none; /* Hide the image on screens with a width of 768px or less */
+        display: none;
+        /* Hide the image on screens with a width of 768px or less */
+        
     }
 }
 
@@ -751,6 +753,9 @@ footer span a:hover{
             cursor: pointer; /* Cursor style on hover */
             transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for color changes */
         }
+    .right-image{
+        border-radius:10px;        
+    }
 
         /* Style for the button on hover */
         .styled-button:hover {
